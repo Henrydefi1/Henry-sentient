@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <div class="container">
+    <h1 class="title">💻 Programming Quiz</h1>
+    <hr style="opacity: 0.8;">
+
+    <div id="intro">
+      <p>Input your name below 👇</p>
+      <input type="text" id="nameInput" placeholder="Enter your name" />
+      <button id="startBtn">Start Quiz</button>
+    </div>
+
+    <div id="quizBox" class="hidden">
+      <div id="questionText"></div>
+      <div id="options"></div>
+      <div class="navigation">
+        <button id="backBtn" class="disabled" disabled>Back</button>
+        <button id="nextBtn" class="disabled">Next</button>
+        <button id="submitBtn" class="hidden">Submit</button>
+      </div>
+    </div>
+
+    <div id="result" class="hidden"></div>
+    <div id="actionButtons" class="hidden">
+      <button id="downloadBtn">⬇️ Download Result</button>
+      <button id="shareBtn">🎉 Share on X</button>
+    </div>
+  </div>
+
+  <div id="topRightWidgets">  
+    <div class="toggle-theme">
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider round"></span>
+      </label>
+      <span id="themeLabel">Dark Mode</span>
+    </div>
+    <h3>Questions &nbsp;: </h3>
+    <div class="circle" id="questionCircle">1/5</div>
+    <h3>Time &nbsp;: </h3>
+    <svg class="timerSvg" width="60" height="60">
+      <circle cx="30" cy="30" r="28" stroke="#00bfff" stroke-width="4" fill="transparent" />
+      <circle id="timerCircleSvg" cx="30" cy="30" r="28"
+        stroke="#ff4d4d" stroke-width="4" fill="transparent"
+        stroke-dasharray="175.84" stroke-dashoffset="0"
+        transform="rotate(-90 30 30)" />
+      <text x="50%" y="50%" text-anchor="middle" dy="7" font-size="16"
+        fill="#fff" id="timerCircle">10</text>
+    </svg>
+
+    <span class="mobileTimer">⌛ 10</span>
+  </div>
+
+  <br><br><br><br>
+  <hr style="opacity: 0.3;">
+  <footer class="footer" style="font-size: 20px;">
+    Built for <strong>@SentientAGI</strong> <br>
+    <span>© Henry1_defi</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
