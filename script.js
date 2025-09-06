@@ -3,18 +3,18 @@ const questions = [
     question: "What is the core mission of @SentientAGI?",
     options: [
       "To build a private AI monopoly",
-      "To make AGI open-source and accessible to everyone",
       "To focus only on robotics",
-      "To create a gaming platform"
+      "To compete with chatgpt",
+      "To make AGI open-source and accessible to everyone"
     ],
-    answer: 1
+    answer: 3
   },
   {
     question: "What are “Dobby models” according to @SentientAGI?",
     options: [
       "AI assistants that act like task managers",
-      "Open-source AI models that feel like personalities rather than tools",
-      "Data-cleaning algorithms",
+      "Open source AI models that feel like personalities rather than tools",
+      "Data cleaning algorithms",
       "Blockchain-based avatars"
     ],
     answer: 1
@@ -26,8 +26,8 @@ const questions = [
   },
   {
     question: "Which company was recently announced as Sentient’s “Official Identity Partner”?",
-    options: ["Microsoft", "OpenAI", "BILLIONS", "Anthropic"],
-    answer: 2
+    options: ["Billions", "OpenAI", "Microsoft", "Anthropic"],
+    answer: 0
   },
   {
     question: "According to @SentientAGI, what is one of the hardest challenges in AI development?",
@@ -56,8 +56,8 @@ const questions = [
   },
   {
     question: "Roughly how many followers does @SentientAGI have on X as of 2025?",
-    options: ["63K", "630K", "6.3M", "63M"],
-    answer: 1
+    options: ["1m", "700k", "585k", "630k"],
+    answer: 3
   },
   {
     question: "What broader goal does @SentientAGI emphasize with its ecosystem?",
@@ -72,22 +72,22 @@ const questions = [
   {
     question: "Why does Sentient believe open-source is essential for AGI?",
     options: [
-      "To lower hardware costs only",
       "To ensure no single entity controls AGI",
+      "To lower hardware costs only",
       "To improve marketing campaigns",
       "To replace human jobs as fast as possible"
     ],
-    answer: 1
+    answer: 0
   },
   {
     question: "What phrase does @SentientAGI often use to describe their Dobby models?",
     options: [
-      "\"Tools for productivity\"",
-      "\"Personalities, not tools\"",
-      "\"Robots for everyone\"",
-      "\"The AI marketplace\""
+      "Tools for productivity",
+      "Robots for everyone",
+      "Personalities, not tools",
+      "The AI marketplace"
     ],
-    answer: 1
+    answer: 2
   },
   {
     question: "What is the main purpose of “the GRID”?",
@@ -101,28 +101,28 @@ const questions = [
   },
   {
     question: "Which topic does @SentientAGI frequently highlight as crucial for safe AGI?",
-    options: ["Data storage", "Alignment", "Energy consumption", "Digital advertising"],
-    answer: 1
+    options: ["Data storage", "Digital Advertising", "Energy consumption", "Alignment"],
+    answer: 3
   },
   {
     question: "How does Sentient describe its approach to building AGI compared to traditional AI labs?",
     options: [
       "Closed and centralized",
-      "Open and community-driven",
       "Secretive and corporate",
-      "Military-focused"
+      "Open and community driven",
+      "Military focused"
     ],
-    answer: 1
+    answer: 2
   },
   {
     question: "What does the partnership with BILLIONS specifically provide for Sentient?",
     options: [
-      "Funding for GPUs",
       "An identity framework for the ecosystem",
+      "Funding for GPUs",
       "A new large language model",
       "Marketing outreach"
     ],
-    answer: 1
+    answer: 0
   },
   {
     question: "What does Sentient believe distinguishes AGI from narrow AI?",
@@ -147,12 +147,12 @@ const questions = [
   {
     question: "What kind of “ecosystem” does Sentient say it is building?",
     options: [
-      "A walled-off platform",
-      "An open, decentralized AGI ecosystem",
+      "A walled off platform",
       "A private AI cloud",
+      "An open, decentralized AGI ecosystem",
       "A social media network"
     ],
-    answer: 1
+    answer: 2
   },
   {
     question: "What does Sentient emphasize about the ethics of AGI?",
@@ -168,11 +168,11 @@ const questions = [
     question: "Which of the following best describes Sentient’s communication style on X?",
     options: [
       "Technical research papers only",
-      "Short, open, community-focused announcements",
+      "Entertainment memes only",
       "Corporate press releases",
-      "Entertainment memes only"
+      "Short, open, community focused announcements"
     ],
-    answer: 1
+    answer: 3
   }
 ];
 
@@ -384,3 +384,4 @@ window.addEventListener("load", () => {
     loadQuestion();
   }
 });
+
